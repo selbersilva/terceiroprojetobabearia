@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Contatos - Barbearia Fernandes</title>
+    <link rel="stylesheet" href="reset.css/reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="caixa">        
+            <h1><img src="img/logo-fernandes.png" class="img-logo" alt="Logo da Barbearia Fernandes"></h1>
+            <nav>
+                <ul class="navegacao">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="promocoes.html">Promoçôes</a></li>
+                    <li><a href="contatos.html">Contatos</a></li>
+                 </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <form>
+            <label for="nome-sobrenome">Nome e sobrenome</label>
+            <input type="text" id="nome-sobrenome" class="input-padrao" required>
+
+            <label for="email">Email</label>    
+            <input type="email" id="email" class="input-padrao" required 
+            placeholder="seuemail@domínio.com">
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" class="input-padrao" required 
+            placeholder="(XX)XXXXX-XXXX">
+
+            <label for="mensagem">Mensagem</label>
+            <textarea cols="70"  rows="10" id="mensagem"  class="input-padrao" required></textarea>
+
+            <fieldset>
+                  <legend>Como prefere o nosso contato?</legend>
+
+                  <label for="radio-email"><input type="radio" name="contato" 
+                  value="email" id="radio-email">Email</label>
+              
+                  <label for="radio-telefone"><input type="radio" name="contato" 
+                  value="telefone" id="radio-telefone">Telefone</label>   
+              
+                  <label for="radio-whatsapp"><input type="radio" name="contato"
+                  value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+  
+                  <legend>Qual horário prefere ser atendido?</legend>
+
+                <select>
+                    <option>Manhã</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                </select>
+            </fieldset>
+            
+            <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+               
+            <input type="submit" volue= "Enviar formulário" class="enviar">
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horário</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunda</td>
+                    <td>14h ~ 20h</td>
+                </tr>
+
+                <tr>
+                    <td>Terça</td>
+                    <td>14h ~ 20h</td>
+                </tr>
+
+                <tr>
+                    <td>Quarta</td>
+                    <td>14h ~ 20h</td>
+                </tr>
+
+                <tr>
+                    <td>Quinta</td>
+                    <td>14h ~ 20h</td>
+                </tr>
+
+                <tr>
+                    <td>Sexta</td>
+                    <td>14h ~ 20h</td>
+                </tr>
+
+                <tr>
+                    <td>Sábado</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 class="titulo-contato">Através dos nossos contatos você pode agendar seu horário.</h2>
+        <p class="email-telefone"><strong>Email:</strong> alber.fer@hotmail.com</p>
+        <p class="email-telefone"><strong>Whatsapp:</strong>(62) 99265-2231</p>
+        <a href="web.whatsapp.com/send?phone=5562992652231" target="_blank"></a>
+  
+    </main>
+
+    <footer>
+        <p class="rodape">Barbearia Fernandes</p>
+        <p class="copyright">&copy; Copyright Barbearia Fernandes - 2018</p>
+    </footer>
+   
+</body>
+</html>
